@@ -8,7 +8,7 @@ const app = express();
 app.set('view engine', "ejs"); //setting up templating engine
 
 // asking it to render a page like a html css or js
-app.get('/home', function(req, res){
+app.get('/', function(req, res){
     res.render("home");
 });
 

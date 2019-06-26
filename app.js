@@ -6,6 +6,8 @@ const app = express();
 
 // adding middleware
 app.set('view engine', "ejs"); //setting up templating engine
+// Allows linked stuff in html file to work
+app.use(express.static('./views'));
 
 // asking it to render a page like a html css or js
 app.get('/', function(req, res){
